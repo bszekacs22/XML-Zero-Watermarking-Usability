@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="dblp">
+            <oneOrMore>
+                <choice>
+                    <element name="article">
+                        <attribute name="key"/>
+                        <attribute name="mdate">
+                            <data type="NMTOKEN"/>
+                        </attribute>
+                        <optional>
+                            <attribute name="publtype">
+                                <data type="NCName"/>
+                            </attribute>
+                        </optional>
+                        <oneOrMore>
+                            <ref name="author"/>
+                        </oneOrMore>
+                        <ref name="title"/>
+                        <oneOrMore>
+                            <choice>
+                                <ref name="month"/>
+                                <ref name="pages"/>
+                                <ref name="year"/>
+                                <element name="journal">
+                                    <text/>
+                                </element>
+                                <element name="volume">
+                                    <text/>
+                                </element>
+                            </choice>
+                        </oneOrMore>
+                        <optional>
+                            <ref name="cdrom"/>
+                        </optional>
+                        <choice>
+                            <ref name="note"/>
+                            <zeroOrMore>
+                                <ref name="ee"/>
+                            </zeroOrMore>
+                        </choice>
+                    </element>
+                    <element name="book">
+                        <attribute name="key"/>
+                        <attribute name="mdate">
+                            <data type="NMTOKEN"/>
+                        </attribute>
+                        <ref name="author"/>
+                        <ref name="title"/>
+                        <ref name="year"/>
+                        <element name="publisher">
+                            <text/>
+                        </element>
+                        <element name="series">
+                            <text/>
+                        </element>
+                        <element name="isbn">
+                            <data type="NMTOKEN"/>
+                        </element>
+                        <oneOrMore>
+                            <ref name="ee"/>
+                        </oneOrMore>
+                    </element>
+                    <element name="inproceedings">
+                        <attribute name="key"/>
+                        <attribute name="mdate">
+                            <data type="NMTOKEN"/>
+                        </attribute>
+                        <ref name="author"/>
+                        <ref name="title"/>
+                        <ref name="month"/>
+                        <ref name="year"/>
+                        <ref name="pages"/>
+                        <element name="booktitle">
+                            <text/>
+                        </element>
+                        <element name="crossref">
+                            <text/>
+                        </element>
+                        <element name="url">
+                            <text/>
+                        </element>
+                        <ref name="note"/>
+                        <ref name="cdrom"/>
+                    </element>
+                    <element name="www">
+                        <attribute name="key"/>
+                        <attribute name="mdate">
+                            <data type="NMTOKEN"/>
+                        </attribute>
+                        <ref name="author"/>
+                        <ref name="title"/>
+                        <ref name="year"/>
+                        <ref name="ee"/>
+                    </element>
+                </choice>
+            </oneOrMore>
+        </element>
+    </start>
+    <define name="author">
+        <element name="author">
+            <optional>
+                <attribute name="orcid">
+                    <data type="NMTOKEN"/>
+                </attribute>
+            </optional>
+            <text/>
+        </element>
+    </define>
+    <define name="title">
+        <element name="title">
+            <text/>
+        </element>
+    </define>
+    <define name="pages">
+        <element name="pages">
+            <data type="NMTOKEN"/>
+        </element>
+    </define>
+    <define name="year">
+        <element name="year">
+            <data type="integer"/>
+        </element>
+    </define>
+    <define name="month">
+        <element name="month">
+            <data type="NCName"/>
+        </element>
+    </define>
+    <define name="cdrom">
+        <element name="cdrom">
+            <text/>
+        </element>
+    </define>
+    <define name="ee">
+        <element name="ee">
+            <optional>
+                <attribute name="type">
+                    <data type="NCName"/>
+                </attribute>
+            </optional>
+            <data type="anyURI"/>
+        </element>
+    </define>
+    <define name="note">
+        <element name="note">
+            <text/>
+        </element>
+    </define>
+</grammar>
