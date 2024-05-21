@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="test" type="testType"/>
+  <xs:complexType name="incollectionType">
+    <xs:sequence>
+      <xs:element name="author" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute type="xs:string" name="orcid" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="pages"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="xs:string" name="booktitle"/>
+      <xs:element type="xs:string" name="ee" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="url"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="mdate" use="optional"/>
+    <xs:attribute type="xs:string" name="key" use="optional"/>
+    <xs:attribute type="xs:string" name="publtype" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="authorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="orcid" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="articleType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="author">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute type="xs:string" name="orcid" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="pages"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="xs:string" name="volume"/>
+      <xs:element type="xs:string" name="journal"/>
+      <xs:element name="number">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="4"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="1-2"/>
+            <xs:enumeration value="2-3"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="ee"/>
+      <xs:element type="xs:string" name="url"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="mdate" use="optional"/>
+    <xs:attribute type="xs:string" name="key" use="optional"/>
+    <xs:attribute type="xs:string" name="publtype" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="inproceedingsType">
+    <xs:sequence>
+      <xs:element name="author" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute type="xs:string" name="orcid" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="title">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="An open architecture for position and force control of robotic manipulators."/>
+            <xs:enumeration value="Multifunctional VLSI systems and their simulation."/>
+            <xs:enumeration value="Advanced electronic circuit breaker techniques for the use in electric vehicle charging stations."/>
+            <xs:enumeration value="28-nm FD-SOI Dual-Port SRAM with MSB-Based Inversion Logic for Low-Power Deep Learning."/>
+            <xs:enumeration value="RF energy harvesting system and circuits for charging of wireless devices using spectrum sensing."/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="pages">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="471-474"/>
+            <xs:enumeration value="386-389"/>
+            <xs:enumeration value="660-663"/>
+            <xs:enumeration value="161-164"/>
+            <xs:enumeration value="431-436"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="year">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1998"/>
+            <xs:enumeration value="1996"/>
+            <xs:enumeration value="2016"/>
+            <xs:enumeration value="2018"/>
+            <xs:enumeration value="2017"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="booktitle"/>
+      <xs:element name="ee">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="https://doi.org/10.1109/ICECS.1998.814923"/>
+            <xs:enumeration value="https://doi.org/10.1109/ICECS.1996.582848"/>
+            <xs:enumeration value="https://doi.org/10.1109/ICECS.2016.7841288"/>
+            <xs:enumeration value="https://doi.org/10.1109/ICECS.2018.8617885"/>
+            <xs:enumeration value="https://doi.org/10.1109/ICECS.2017.8292044"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="crossref">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="conf/icecsys/1998"/>
+            <xs:enumeration value="conf/icecsys/1996"/>
+            <xs:enumeration value="conf/icecsys/2016"/>
+            <xs:enumeration value="conf/icecsys/2018"/>
+            <xs:enumeration value="conf/icecsys/2017"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="url">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="db/conf/icecsys/icecsys1998.html#BaptistaMCC98"/>
+            <xs:enumeration value="db/conf/icecsys/icecsys1996.html#Szczesniak96"/>
+            <xs:enumeration value="db/conf/icecsys/icecsys2016.html#StoychevO16"/>
+            <xs:enumeration value="db/conf/icecsys/icecsys2018.html#MoriIKY18"/>
+            <xs:enumeration value="db/conf/icecsys/icecsys2017.html#MoghaddamMSP17"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="mdate" use="optional"/>
+    <xs:attribute type="xs:string" name="key" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="testType">
+    <xs:sequence>
+      <xs:element type="incollectionType" name="incollection" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="articleType" name="article" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="inproceedingsType" name="inproceedings" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
