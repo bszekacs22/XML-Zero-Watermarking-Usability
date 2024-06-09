@@ -1,4 +1,6 @@
 from lxml import etree
+import time
+
 
 
 # Step 1: Generate Unique Schema Paths
@@ -11,6 +13,7 @@ def generate_unique_schema_paths(root, current_path=""):
     return paths
 
 
+
 # Parse the XML file using lxml
 parser = etree.XMLParser(load_dtd=True, dtd_validation=True)
 tree = etree.parse('../../data/test.xml', parser)
@@ -18,22 +21,42 @@ root = tree.getroot()
 
 # Generate all unique paths
 schema_paths = generate_unique_schema_paths(root)
-print("All Unique Paths:", schema_paths)
+paths = [x for x in schema_paths if 'inproceedings' in x]
+print("All Unique Paths:", paths)
 
 
-# Step 2: Generate Cover Ranges and Gamma Closures
+start = time.time()
+
 def generate_cover_ranges(query_templates):
-    cover_ranges = {}
+    cover_ranges = {"inproceedings": {"inproceedings"}}
     for qt in query_templates:
         parts = qt.split('/')
-        cover_ranges[qt] = set()
-        for i in range(1, len(parts)):
-            cover_ranges[qt].add('/'.join(parts[:i]))
-            if '[' in parts[i] and ']' in parts[i]:
-                conditions = parts[i][parts[i].index('[')+1:parts[i].index(']')].split(',')
+        key = '/'.join(parts)
+        cover_ranges[key] = set()
+
+        base_path = ""
+        for part in parts:
+            if '[' in part and ']' in part:
+                base = part[:part.index('[')]
+                conditions = part[part.index('[') + 1:part.index(']')].split(',')
                 for condition in conditions:
-                    cover_ranges[qt].add('/'.join(parts[:i]) + '/' + condition.strip())
+                    cover_ranges[key].add(f"{base}/{condition.strip()}")
+                base_path = f"{base}"
+            else:
+                base_path = f"{base_path}/{part}"
+                cover_ranges[key].add(base_path)
     return cover_ranges
+
+
+# Example query templates
+query_templates = [
+    "inproceedings[title]/author",
+    "inproceedings[author]",
+    "inproceedings[conference]/title"
+]
+
+cover_ranges = generate_cover_ranges(query_templates)
+print("Cover Ranges:", cover_ranges)
 
 
 
@@ -58,61 +81,114 @@ def find_gamma_closure(cover_ranges, gamma):
     return closures
 
 
-query_templates = [
-    "Root/inproceedings[title]/author",
-    "Root/inproceedings[title]/journal"
-]
 
-cover_ranges = generate_cover_ranges(query_templates)
-print("Cover Ranges:", cover_ranges)
-
-gamma = 0.05
-gamma_closures = find_gamma_closure(cover_ranges, gamma)
-print("Gamma Closures:", gamma_closures)
+# gamma = 0.05
+# gamma_closures = find_gamma_closure(cover_ranges, gamma)
+# print("Gamma Closures:", gamma_closures)
 
 
 # Step 3: Determine Minimum Determinants
-def find_minimum_determinants(schema_paths, fds):
+def find_minimum_determinants(paths, fds):
     min_determinants = {}
-    for path in schema_paths:
-        determinants = [fd[0] for fd in fds if fd[1] == path]
+    for path in paths:
+        determinants = None
+        for fd in fds:
+            if fd[1] == path:
+                determinants = fd[0]
         if determinants:
-            min_determinants[path] = min(determinants, key=len)
+            min_determinants[path] = determinants
         else:
             min_determinants[path] = None
     return min_determinants
-
-
 fds = [
-    ("Root/inproceedings/title", "Root/inproceedings"),
-    ("Root/inproceedings/author", "Root/inproceedings")
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings"),
+    (["inproceedings/ee", "inproceedings/url"], "inproceedings/title"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/author"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/conference"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/year"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/month"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/crossref"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/pages"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/note"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/cdrom"),
+    (["inproceedings/title", "inproceedings/ee"], "inproceedings/url"),
+    (["inproceedings/title", "inproceedings/ee", "inproceedings/url"], "inproceedings/booktitle"),
+    (["inproceedings/title", "inproceedings/url"], "inproceedings/ee")
 ]
-min_determinants = find_minimum_determinants(schema_paths, fds)
+
+# fds = [
+#     ("inproceedings/title", "inproceedings"),
+#     ("inproceedings", "inproceedings/title"),
+#     ("inproceedings", "inproceedings/conference"),
+#     ("inproceedings", "inproceedings/year"),
+#     ("inproceedings", "inproceedings/month"),
+#     ("inproceedings", "inproceedings/crossref"),
+#     ("inproceedings", "inproceedings/pages"),
+#     ("inproceedings", "inproceedings/note"),
+#     ("inproceedings", "inproceedings/cdrom"),
+#     ("inproceedings", "inproceedings/url"),
+#     ("inproceedings", "inproceedings/booktitle"),
+#     ("inproceedings", "inproceedings/ee"),
+#     ("inproceedings/url", "inproceedings"),
+#     ("inproceedings/ee", "inproceedings")
+# ]
+
+
+min_determinants = find_minimum_determinants(paths, fds)
 print("Minimum Determinants:", min_determinants)
 
 
 # Step 4: Create Identifiers
-def create_identifiers(schema_paths, cover_ranges, min_determinants, gamma_closures):
+def create_identifiers(paths, cover_ranges, min_determinants, gamma_closures):
     identifiers = {}
 
-    for path in schema_paths:
+    for path in paths:
         if not any(path in cover for cover in cover_ranges.values()):
             identifiers[path] = None
         elif min_determinants[path] is None:
-            longest_prefix = "/".join(path.split("/")[:-1])
-            if longest_prefix in identifiers:
-                identifiers[path] = identifiers[longest_prefix] + "/" + path.split("/")[-1]
-            else:
-                identifiers[path] = path
+            identifiers[path] = path
         else:
             min_determinant = min_determinants[path]
-            if any(path in closure and min_determinant in closure for closure in gamma_closures):
+            if any(any(det in cover for det in min_determinant) for cover in cover_ranges.values()):
+            # if any(path in closure and min_determinant in closure for closure in gamma_closures):
                 identifiers[path] = min_determinant
             else:
                 identifiers[path] = path
-
     return identifiers
 
+def generate_node_ids(root, path_identifiers):
+    node_ids = {}
 
-identifiers = create_identifiers(schema_paths, cover_ranges, min_determinants, gamma_closures)
+    for path, path_id in path_identifiers.items():
+        if path_id is not None:
+            nodes = root.xpath(path)
+            for index, node in enumerate(nodes):
+                node_id = create_node_id(path, node)
+                node_ids[(path, index)] = node_id
+
+    return node_ids
+
+def create_node_id(path, node):
+    # Collect node attributes and text content to form a unique query
+    attribute_conditions = []
+    for attr, value in node.attrib.items():
+        attribute_conditions.append(f'@{attr}="{value}"')
+
+    # Add the node text if it exists
+    if node.text and node.text.strip():
+        attribute_conditions.append(f'text()="{node.text.strip()}"')
+
+    # Combine the path and conditions to form the node identifier
+    conditions = " and ".join(attribute_conditions)
+    node_id = f'{path}[{conditions}]' if conditions else path
+
+    return node_id
+
+
+identifiers = create_identifiers(paths, cover_ranges, min_determinants, None)
 print("Identifiers:", identifiers)
+
+node_ids = generate_node_ids(root, identifiers)
+print("Node Identifiers:", node_ids)
+
+print("--- %s seconds ---" % (time.time() - start))

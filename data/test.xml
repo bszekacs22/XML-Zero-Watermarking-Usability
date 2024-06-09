@@ -1176,4 +1176,575 @@
         <crossref>conf/icecsys/2017</crossref>
         <url>db/conf/icecsys/icecsys2017.html#MoghaddamMSP17</url>
     </inproceedings>
+    <inproceedings mdate="2022-10-02" key="series/sapere/Freed13">
+<author orcid="0000-0002-4182-3228">Sam Freed</author>
+<title>Practical Introspection as Inspiration for AI.</title>
+<pages>167-177</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_12</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Freed13</url>
+</inproceedings><inproceedings mdate="2023-03-21" key="series/sapere/Steiner13">
+<author orcid="0000-0002-0041-5973">Pierre Steiner</author>
+<title>C.S. Peirce and Artificial Intelligence: Historical Heritage and (New) Theoretical Stakes.</title>
+<pages>265-276</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_20</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Steiner13</url>
+</inproceedings><incollection mdate="2022-05-24" key="series/sapere/WhittleFS20">
+<author>Jon Whittle 0001</author>
+<author orcid="0000-0002-2846-1365">Maria Angela Ferrario</author>
+<author>William Simm</author>
+<title>Community-University Research: A Warts and All Account.</title>
+<pages>115-147</pages>
+<year>2020</year>
+<booktitle>Into the Wild: Beyond the Design Research Lab</booktitle>
+<ee>https://doi.org/10.1007/978-3-030-18020-1_7</ee>
+<crossref>series/sapere/48</crossref>
+<url>db/series/sapere/sapere48.html#WhittleFS20</url>
+</incollection><inproceedings mdate="2019-09-06" key="series/sapere/Sandberg13">
+<author orcid="0000-0001-5636-5402">Anders Sandberg</author>
+<title>Feasibility of Whole Brain Emulation.</title>
+<pages>251-264</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_19</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Sandberg13</url>
+</inproceedings><book mdate="2017-05-16" key="series/sapere/Cotton14">
+<author>Matthew Cotton</author>
+<title>Ethics and Technology Assessment: A Participatory Approach</title>
+<year>2014</year>
+<pages>1-170</pages>
+<publisher>Springer</publisher>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>13</volume>
+<isbn>978-3-642-45087-7</isbn>
+<isbn>978-3-642-45088-4</isbn>
+<ee>https://doi.org/10.1007/978-3-642-45088-4</ee>
+</book><incollection mdate="2017-06-14" key="series/sapere/CaldersZ13">
+<author>Toon Calders</author>
+<author orcid="0000-0003-2427-5407">Indre Zliobaite</author>
+<title>Why Unbiased Computational Processes Can Lead to Discriminative Decision Procedures.</title>
+<pages>43-57</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_3</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#CaldersZ13</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Magnani11">
+<author>Lorenzo Magnani</author>
+<title>Understanding Violence - The Intertwining of Morality, Religion and Violence: A Philosophical Stance</title>
+<volume>1</volume>
+<year>2011</year>
+<pages>1-294</pages>
+<publisher>Springer</publisher>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<isbn>978-3-642-21971-9</isbn>
+<ee>https://doi.org/10.1007/978-3-642-21972-6</ee>
+</book><incollection mdate="2021-10-14" key="series/sapere/Russo17">
+<author orcid="0000-0002-8961-4214">Maria Teresa Russo</author>
+<title>The Human Hand as a Microcosm. A Philosophical Overview on the Hand and Its Role in the Processes of Perception, Action, and Cognition.</title>
+<pages>99-113</pages>
+<year>2017</year>
+<booktitle>The Hand</booktitle>
+<ee>https://doi.org/10.1007/978-3-319-66881-9_6</ee>
+<crossref>series/sapere/38</crossref>
+<url>db/series/sapere/sapere38.html#Russo17</url>
+</incollection><book mdate="2018-11-02" key="series/sapere/DellantonioP17">
+<author>Sara Dellantonio</author>
+<author orcid="0000-0002-5892-6928">Luigi Pastore</author>
+<title>Internal Perception - The Role of Bodily Information in Concepts and Word Mastery</title>
+<publisher>Springer</publisher>
+<year>2017</year>
+<pages>1-357</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>40</volume>
+<isbn>978-3-662-55761-7</isbn>
+<ee>https://doi.org/10.1007/978-3-662-55763-1</ee>
+</book><inproceedings mdate="2023-09-30" key="series/sapere/BerkeleyR13">
+<author>Istvan S. N. Berkeley</author>
+<author orcid="0000-0002-4414-6920">Claiborne Rice</author>
+<title>Machine Mentality?</title>
+<pages>1-15</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_1</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#BerkeleyR13</url>
+</inproceedings><book mdate="2019-11-08" key="series/sapere/Carsetti20">
+<author>Arturo Carsetti</author>
+<title>Metabiology - Non-standard Models, General Semantics and Natural Evolution</title>
+<publisher>Springer</publisher>
+<year>2020</year>
+<pages>1-157</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>50</volume>
+<isbn>978-3-030-32717-0</isbn>
+<ee>https://doi.org/10.1007/978-3-030-32718-7</ee>
+</book>
+<incollection mdate="2022-10-02" key="series/sapere/ColombinoWGH20">
+<author>Tommaso Colombino</author>
+<author>Jutta Willamowski</author>
+<author orcid="0000-0003-0350-9083">Antonietta Grasso</author>
+<author>Benjamin V. Hanrahan</author>
+<title>Deeper into the Wild: Technology Co-creation Across Corporate Boundaries.</title>
+<pages>55-71</pages>
+<year>2020</year>
+<booktitle>Into the Wild: Beyond the Design Research Lab</booktitle>
+<ee>https://doi.org/10.1007/978-3-030-18020-1_4</ee>
+<crossref>series/sapere/48</crossref>
+<url>db/series/sapere/sapere48.html#ColombinoWGH20</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Pinna17">
+<author>Simone Pinna</author>
+<title>Extended Cognition and the Dynamics of Algorithmic Skills</title>
+<publisher>Springer</publisher>
+<year>2017</year>
+<pages>1-118</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>35</volume>
+<isbn>978-3-319-51840-4</isbn>
+<isbn>978-3-319-51841-1</isbn>
+<ee>https://doi.org/10.1007/978-3-319-51841-1</ee>
+</book><incollection mdate="2017-05-16" key="series/sapere/Chen12">
+<author>Xiang Chen</author>
+<title>The Greenhouse Metaphor and the Greenhouse Effect: A Case Study of a Flawed Analogous Model.</title>
+<pages>105-114</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_5</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#Chen12</url>
+</incollection><book mdate="2022-04-11" key="series/sapere/Minazzi22">
+<author>Fabio Minazzi</author>
+<title>Historical Epistemology and European Philosophy of Science - Rethinking Critical Rationalism and Transcendentalism</title>
+<publisher>Springer</publisher>
+<year>2022</year>
+<pages>3-370</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>62</volume>
+<isbn>978-3-030-96331-6</isbn>
+<ee>https://doi.org/10.1007/978-3-030-96332-3</ee>
+</book>
+<book mdate="2017-05-16" key="series/sapere/CaterinaG16">
+<author>Gianluca Caterina</author>
+<author>Rocco Gangle</author>
+<title>Iconicity and Abduction</title>
+<publisher>Springer</publisher>
+<year>2016</year>
+<pages>1-152</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>29</volume>
+<isbn>978-3-319-44244-0</isbn>
+<isbn>978-3-319-44245-7</isbn>
+<ee>https://doi.org/10.1007/978-3-319-44245-7</ee>
+</book><incollection mdate="2017-05-16" key="series/sapere/CaldersC13">
+<author>Toon Calders</author>
+<author>Bart Custers</author>
+<title>What Is Data Mining and How Does It Work?</title>
+<pages>27-42</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_2</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#CaldersC13</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Maattanen15">
+<author>Pentti M&auml;&auml;tt&auml;nen</author>
+<title>Mind in Action - Experience and Embodied Cognition in Pragmatism</title>
+<publisher>Springer</publisher>
+<year>2015</year>
+<pages>1-86</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>18</volume>
+<isbn>978-3-319-17622-2</isbn>
+<isbn>978-3-319-17623-9</isbn>
+<ee>https://doi.org/10.1007/978-3-319-17623-9</ee>
+</book><inproceedings mdate="2019-09-06" key="series/sapere/NasutoB13">
+<author>Slawomir J. Nasuto</author>
+<author>John Mark Bishop</author>
+<title>Of (Zombie) Mice and Animats.</title>
+<pages>85-106</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_7</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#NasutoB13</url>
+</inproceedings><book mdate="2017-05-16" key="series/sapere/Shelley17">
+<author>Cameron Shelley</author>
+<title>Design and Society: Social Issues in Technological Design</title>
+<year>2017</year>
+<pages>1-224</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>36</volume>
+<publisher>Springer</publisher>
+<isbn>978-3-319-52514-3</isbn>
+<isbn>978-3-319-52515-0</isbn>
+<ee>https://doi.org/10.1007/978-3-319-52515-0</ee>
+</book><inproceedings mdate="2019-09-06" key="series/sapere/Bokulich13">
+<author>Peter Bokulich</author>
+<title>The Physics and Metaphysics of Computation and Cognition.</title>
+<pages>29-41</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_3</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Bokulich13</url>
+</inproceedings><incollection mdate="2017-05-16" key="series/sapere/Oh12">
+<author>Jun-young Oh</author>
+<title>Understanding Scientific Inference in the Natural Sciences Based on Abductive Inference Strategies.</title>
+<pages>221-237</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_12</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#Oh12</url>
+</incollection><book mdate="2019-07-25" key="series/sapere/48">
+<editor>Alan Chamberlain</editor>
+<editor>Andy Crabtree</editor>
+<title>Into the Wild: Beyond the Design Research Lab</title>
+<publisher>Springer</publisher>
+<year>2020</year>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>48</volume>
+<isbn>978-3-030-18018-8</isbn>
+<isbn>978-3-030-18020-1</isbn>
+<ee>https://doi.org/10.1007/978-3-030-18020-1</ee>
+<url>db/series/sapere/sapere48.html</url>
+</book>
+
+<incollection mdate="2017-05-16" key="series/sapere/Bardone12">
+<author>Emanuele Bardone</author>
+<title>Not by Luck Alone: The Importance of Chance-Seeking and Silent Knowledge in Abductive Cognition.</title>
+<pages>185-203</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_10</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#Bardone12</url>
+</incollection><book mdate="2023-01-16" key="series/sapere/Fossa23">
+<author>Fabio Fossa</author>
+<title>Ethics of Driving Automation - Artificial Agency and Human Values</title>
+<publisher>Springer</publisher>
+<year>2023</year>
+<pages>1-148</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>65</volume>
+<isbn>978-3-031-22981-7</isbn>
+<ee>https://doi.org/10.1007/978-3-031-22982-4</ee>
+</book>
+<incollection mdate="2022-10-02" key="series/sapere/LemanNS17">
+<author>Marc Leman</author>
+<author orcid="0000-0002-7054-2660">Luc Nijs</author>
+<author orcid="0000-0002-9286-0395">Nicola Di Stefano</author>
+<title>On the Role of the Hand in the Expression of Music.</title>
+<pages>175-192</pages>
+<year>2017</year>
+<booktitle>The Hand</booktitle>
+<ee>https://doi.org/10.1007/978-3-319-66881-9_11</ee>
+<crossref>series/sapere/38</crossref>
+<url>db/series/sapere/sapere38.html#LemanNS17</url>
+</incollection><incollection mdate="2017-07-13" key="series/sapere/LiL12">
+<author>Dachao Li</author>
+<author>Ping Li 0010</author>
+<title>An Examination of the Thesis of Models as Representations.</title>
+<pages>39-51</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_2</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#LiL12</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Negrotti12">
+<author>Massimo Negrotti</author>
+<title>The Reality of the Artificial - Nature, Technology and Naturoids</title>
+<volume>4</volume>
+<year>2012</year>
+<pages>3-138</pages>
+<publisher>Springer</publisher>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<isbn>978-3-642-29678-9</isbn>
+<ee>https://doi.org/10.1007/978-3-642-29679-6</ee>
+</book><inproceedings mdate="2019-09-06" key="series/sapere/Armstrong13">
+<author>Stuart Armstrong</author>
+<title>Risks and Mitigation Strategies for Oracle AI.</title>
+<pages>335-347</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_25</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Armstrong13</url>
+</inproceedings><incollection mdate="2021-07-25" key="series/sapere/KamiranCP13">
+<author>Faisal Kamiran</author>
+<author>Toon Calders</author>
+<author orcid="0000-0003-4955-0743">Mykola Pechenizkiy</author>
+<title>Techniques for Discrimination-Free Predictive Models.</title>
+<pages>223-239</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_12</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#KamiranCP13</url>
+</incollection><book mdate="2018-09-28" key="series/sapere/Haig18">
+<author>Brian D. Haig</author>
+<title>Method Matters in Psychology - Essays in Applied Philosophy of Science</title>
+<publisher>Springer</publisher>
+<year>2018</year>
+<pages>1-203</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>45</volume>
+<isbn>978-3-030-01050-8</isbn>
+<ee>https://doi.org/10.1007/978-3-030-01051-5</ee>
+</book>
+<incollection mdate="2022-01-03" key="series/sapere/RaceRRS20">
+<author orcid="0000-0002-6870-8078">Nick Race</author>
+<author>Dave Randall 0001</author>
+<author>Mark Rouncefield</author>
+<author>Roger Slack</author>
+<title>Practical Ethics.</title>
+<pages>173-193</pages>
+<year>2020</year>
+<booktitle>Into the Wild: Beyond the Design Research Lab</booktitle>
+<ee>https://doi.org/10.1007/978-3-030-18020-1_9</ee>
+<crossref>series/sapere/48</crossref>
+<url>db/series/sapere/sapere48.html#RaceRRS20</url>
+</incollection><inproceedings mdate="2019-09-06" key="series/sapere/Yampolskiy13">
+<author>Roman V. Yampolskiy</author>
+<title>Artificial Intelligence Safety Engineering: Why Machine Ethics Is a Wrong Approach.</title>
+<pages>389-396</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_29</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Yampolskiy13</url>
+</inproceedings><incollection mdate="2017-05-16" key="series/sapere/Sloot13">
+<author>Bart van der Sloot</author>
+<title>From Data Minimization to Data Minimummization.</title>
+<pages>273-287</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_15</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#Sloot13</url>
+</incollection><inproceedings mdate="2019-09-06" key="series/sapere/SchiaffonatiV13">
+<author>Viola Schiaffonati</author>
+<author>Mario Verdicchio</author>
+<title>The Influence of Engineering Theory and Practice on Philosophy of AI.</title>
+<pages>375-388</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_28</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#SchiaffonatiV13</url>
+</inproceedings><inproceedings mdate="2019-09-06" key="series/sapere/Giovagnoli13">
+<author>Raffaela Giovagnoli</author>
+<title>"Computational Ontology and Deontology".</title>
+<pages>179-186</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_13</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Giovagnoli13</url>
+</inproceedings><inproceedings mdate="2019-09-06" key="series/sapere/Morse13">
+<author>Anthony F. Morse</author>
+<title>Snapshots of Sensorimotor Perception: Putting the Body Back into Embodiment.</title>
+<pages>237-250</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_18</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Morse13</url>
+</inproceedings><incollection mdate="2020-06-02" key="series/sapere/Dix20">
+<author>Alan J. Dix</author>
+<title>Step by Step Research.</title>
+<pages>7-29</pages>
+<year>2020</year>
+<booktitle>Into the Wild: Beyond the Design Research Lab</booktitle>
+<ee>https://doi.org/10.1007/978-3-030-18020-1_2</ee>
+<crossref>series/sapere/48</crossref>
+<url>db/series/sapere/sapere48.html#Dix20</url>
+</incollection>
+<incollection mdate="2020-12-29" key="series/sapere/CiancioCHSGZ17">
+<author orcid="0000-0003-0488-0546">Anna Lisa Ciancio</author>
+<author orcid="0000-0002-6946-0377">Francesca Cordella</author>
+<author>Klaus-Peter Hoffmann</author>
+<author>Andreas Schneider</author>
+<author>Eugenio Guglielmelli</author>
+<author orcid="0000-0002-8015-010X">Loredana Zollo</author>
+<title>Current Achievements and Future Directions of Hand Prostheses Controlled via Peripheral Nervous System.</title>
+<pages>75-95</pages>
+<year>2017</year>
+<booktitle>The Hand</booktitle>
+<ee>https://doi.org/10.1007/978-3-319-66881-9_5</ee>
+<crossref>series/sapere/38</crossref>
+<url>db/series/sapere/sapere38.html#CiancioCHSGZ17</url>
+</incollection><book mdate="2023-05-14" key="series/sapere/Chiodo23">
+<author>Simona Chiodo</author>
+<title>Technology and the Overturning of Human Autonomy</title>
+<publisher>Springer</publisher>
+<year>2023</year>
+<pages>3-113</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>66</volume>
+<isbn>978-3-031-26158-9</isbn>
+<ee>https://doi.org/10.1007/978-3-031-26159-6</ee>
+</book>
+<inproceedings mdate="2019-09-06" key="series/sapere/BishopNC13">
+<author>John Mark Bishop</author>
+<author>Slawomir J. Nasuto</author>
+<author>Bob Coecke</author>
+<title>'Quantum Linguistics' and Searle's Chinese Room Argument.</title>
+<pages>17-28</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_2</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#BishopNC13</url>
+</inproceedings><book mdate="2017-05-16" key="series/sapere/Iorio15">
+<author>Francesco Di Iorio</author>
+<title>Cognitive Autonomy and Methodological Individualism - The Interpretative Foundations of Social Life</title>
+<publisher>Springer</publisher>
+<year>2015</year>
+<pages>1-185</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>22</volume>
+<isbn>978-3-319-19511-7</isbn>
+<isbn>978-3-319-19512-4</isbn>
+<ee>https://doi.org/10.1007/978-3-319-19512-4</ee>
+</book><incollection mdate="2017-05-16" key="series/sapere/DellantonioJ12">
+<author>Sara Dellantonio</author>
+<author>Remo Job</author>
+<title>Moral Intuitions vs. Moral Reasoning. A Philosophical Analysis of the Explanatory Models Intuitionism Relies On.</title>
+<pages>239-262</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_13</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#DellantonioJ12</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Bertolotti15">
+<author>Tommaso Bertolotti</author>
+<title>Patterns of Rationality - Recurring Inferences in Science, Social Cognition and Religious Thinking</title>
+<publisher>Springer</publisher>
+<year>2015</year>
+<pages>1-272</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>19</volume>
+<isbn>978-3-319-17785-4</isbn>
+<isbn>978-3-319-17786-1</isbn>
+<ee>https://doi.org/10.1007/978-3-319-17786-1</ee>
+</book><inproceedings mdate="2019-09-06" key="series/sapere/Dodig-Crnkovic13">
+<author orcid="0000-0001-9881-400X">Gordana Dodig-Crnkovic</author>
+<title>The Info-computational Nature of Morphological Computing.</title>
+<pages>59-68</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_5</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Dodig-Crnkovic13</url>
+</inproceedings><book mdate="2019-02-22" key="series/sapere/Arfini19">
+<author>Selene Arfini</author>
+<title>Ignorant Cognition - A Philosophical Investigation of the Cognitive Features of Not-Knowing</title>
+<publisher>Springer</publisher>
+<year>2019</year>
+<pages>1-188</pages>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<volume>46</volume>
+<isbn>978-3-030-14361-9</isbn>
+<ee>https://doi.org/10.1007/978-3-030-14362-6</ee>
+</book>
+<inproceedings mdate="2019-09-06" key="series/sapere/HornHTOE13">
+<author>Justin Horn</author>
+<author>Nicodemus Hallin</author>
+<author>Hossein Taheri</author>
+<author orcid="0000-0002-4629-0811">Michael O'Rourke</author>
+<author>Dean Edwards</author>
+<title>Intentional State-Ascription in Multi-Agent Systems - A Case Study in Unmanned Underwater Vehicles.</title>
+<pages>225-235</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_17</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#HornHTOE13</url>
+</inproceedings><incollection mdate="2018-11-02" key="series/sapere/Bertolotti12">
+<author orcid="0000-0001-5216-1314">Tommaso Bertolotti</author>
+<title>From Mindless Modeling to Scientific Models - The Case of Emerging Models.</title>
+<pages>75-104</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_4</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#Bertolotti12</url>
+</incollection><incollection mdate="2019-07-25" key="series/sapere/LugerR20">
+<author>Ewa Luger</author>
+<author>Tom Rodden</author>
+<title>Ethics and Consent in the (Sociotechnical) Wild.</title>
+<pages>149-172</pages>
+<year>2020</year>
+<booktitle>Into the Wild: Beyond the Design Research Lab</booktitle>
+<ee>https://doi.org/10.1007/978-3-030-18020-1_8</ee>
+<crossref>series/sapere/48</crossref>
+<url>db/series/sapere/sapere48.html#LugerR20</url>
+</incollection>
+<incollection mdate="2017-05-16" key="series/sapere/Pizzi12">
+<author>Claudio Pizzi</author>
+<title>A Proposal on Belief, Abduction and Interpretation.</title>
+<pages>173-184</pages>
+<year>2012</year>
+<booktitle>Philosophy and Cognitive Science</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-29928-5_9</ee>
+<crossref>series/sapere/2012-2</crossref>
+<url>db/series/sapere/sapere2.html#Pizzi12</url>
+</incollection><incollection mdate="2017-05-16" key="series/sapere/RomeiR13">
+<author>Andrea Romei</author>
+<author>Salvatore Ruggieri</author>
+<title>Discrimination Data Analysis: A Multi-disciplinary Bibliography.</title>
+<pages>109-135</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_6</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#RomeiR13</url>
+</incollection><book mdate="2017-05-16" key="series/sapere/Boniolo12">
+<author>Giovanni Boniolo</author>
+<title>The Art of Deliberating - Democracy, Deliberation and the Life Sciences between History and Theory</title>
+<volume>6</volume>
+<year>2012</year>
+<pages>1-178</pages>
+<publisher>Springer</publisher>
+<series href="db/series/sapere/index.html">Studies in Applied Philosophy, Epistemology and Rational Ethics</series>
+<isbn>978-3-642-31953-2</isbn>
+<ee>https://doi.org/10.1007/978-3-642-31954-9</ee>
+</book><incollection mdate="2017-12-14" key="series/sapere/CustersCZS13">
+<author>Bart Custers</author>
+<author>Toon Calders</author>
+<author>Tal Z. Zarsky</author>
+<author>Bart W. Schermer</author>
+<title>The Way Forward.</title>
+<pages>341-357</pages>
+<year>2013</year>
+<booktitle>Discrimination and Privacy in the Information Society</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-30487-3_19</ee>
+<crossref>series/sapere/2013-3</crossref>
+<url>db/series/sapere/sapere3.html#CustersCZS13</url>
+</incollection><inproceedings mdate="2019-09-06" key="series/sapere/Vilarroya13">
+<author orcid="0000-0001-8285-5624">Oscar Vilarroya</author>
+<title>Introducing Experion as a Primal Cognitive Unit of Neural Processing.</title>
+<pages>289-305</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_22</ee>
+<ee>https://www.wikidata.org/entity/Q60633352</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Vilarroya13</url>
+</inproceedings><inproceedings mdate="2019-09-06" key="series/sapere/Anderson13">
+<author>David Leech Anderson</author>
+<title>Machine Intentionality, the Moral Status of Machines, and the Composition Problem.</title>
+<pages>321-333</pages>
+<year>2011</year>
+<booktitle>PT-AI</booktitle>
+<ee>https://doi.org/10.1007/978-3-642-31674-6_24</ee>
+<crossref>series/sapere/2013-5</crossref>
+<url>db/series/sapere/sapere5.html#Anderson13</url>
+</inproceedings>
 </test>
