@@ -7,6 +7,8 @@ def candidateLHS(A, FDs):
     Ls = set()  # Initialize an empty set to hold the LHS candidates
     for a in A:
         AL = A - {a}
+        if not FDs:
+            Ls.add(frozenset(AL))
         for fd in FDs:
             L, r = fd['LHS'], fd['RHS']
             if a == r and AL.issubset(L):
@@ -18,9 +20,25 @@ def candidateLHS(A, FDs):
     return Ls
 
 
+def maxgroupsize(d):
+    res = 1
+    for att in d.keys():
+        res = max(res, len(d[att]))
+    return res
+
+def deletegroupsofone(d):
+    for att in list(d.keys()):
+        if len(d[att]) == 1:
+            del d[att]
+    return d
+
 def discover_fd(Rp):
     # Step 1: Generate attribute partitions
-    attribute_partitions = utils.generate_attribute_partitions(Rp, "inproceedings")
+    attribute_partitions = utils.generate_attribute_partitions(Rp, "city")
+    # Delete partitions w 1 element
+    for att in attribute_partitions.keys():
+        attribute_partitions[att] = deletegroupsofone(attribute_partitions[att])
+
 
     # Step 2: Initialize sets and queue
     Keys = set()
@@ -30,6 +48,9 @@ def discover_fd(Rp):
 
     # Step 3: Enqueue single attribute nodes
     for attr in attributes:
+        if maxgroupsize(attribute_partitions[attr]) == 1:
+            Keys.add(attr)
+            continue
         Q.append(attr)
 
     # Step 4: Process the queue
@@ -44,12 +65,12 @@ def discover_fd(Rp):
 
             if len(Ls) == 1:
                 A1 = next(iter(Ls))
-                attribute_partitions[A] = attribute_partitions[A - A1] & attribute_partitions[A1]
+                attribute_partitions = utils.combine_attribute_partitions(A-A1, A1, attribute_partitions)
             else:
                 A1, A2 = list(Ls)[:2]
-                attribute_partitions[A] = attribute_partitions[A1] & attribute_partitions[A2]
+                attribute_partitions = utils.combine_attribute_partitions(A1, A2, attribute_partitions)
 
-        if len(attribute_partitions[A]) == 1:
+        if maxgroupsize(attribute_partitions[A]) == 1:
             Keys.add(A)
             continue
 
@@ -72,7 +93,7 @@ def discover_fd(Rp):
 
 
 parser = ET.XMLParser(load_dtd=True, dtd_validation=True)
-tree = ET.parse('../../data/test.xml', parser)
+tree = ET.parse('../../data/mondial.xml', parser)
 root = tree.getroot()
 
 
