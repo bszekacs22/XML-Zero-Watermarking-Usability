@@ -1,6 +1,10 @@
 from collections import defaultdict
-
-
+import shelve
+import sqlite3
+from lxml import etree as ET
+import time
+import pandas as pd
+import os
 
 def generate_attribute_partitions(root, tag):
     attribute_partitions = defaultdict(dict)
@@ -13,12 +17,15 @@ def generate_attribute_partitions(root, tag):
         for child in node:
             attr = frozenset({child.tag})
             if child.text:
+                value = child.text
                 if attr in attribute_partitions.keys():
-                    if child.text in attribute_partitions[attr].keys():
-                        attribute_partitions[attr][child.text] = attribute_partitions[attr][child.text] | {node}
-                    else: attribute_partitions[attr][child.text] = {node}
+                    if value in attribute_partitions[attr].keys():
+                        attribute_partitions[attr][value] = attribute_partitions[attr][value] | {node}
+                    else:
+                        attribute_partitions[attr][value] = {node}
                 else:
-                    attribute_partitions[attr] = {child.text: {node}}
+                    attribute_partitions[attr] = {value: {node}}
+
 
     return attribute_partitions
 
@@ -29,7 +36,28 @@ def combine_attribute_partitions(key1, key2, parts):
             e1 = parts[key1][k1]
             e2 = parts[key2][k2]
             elems = e1 & e2
-            if elems:
+            if len(elems) > 1:
                 parts[combinedkey][frozenset({k1}) | frozenset({k2})] = elems
     return parts
 
+def generate_attribute_partitions_tags(root, tag, tags):
+    attribute_partitions = defaultdict(dict)
+
+    # Find all nodes with the specified tag (e.g., 'inproceedings')
+    nodes = root.findall(f'.//{tag}')
+
+    for node in nodes:
+        # Collect the child elements and their text values for each node
+        for child in node:
+            if child.tag in tags:
+                attr = frozenset({child.tag})
+                if child.text:
+                    value = child.text
+                    if attr in attribute_partitions.keys():
+                        if value in attribute_partitions[attr].keys():
+                            attribute_partitions[attr][value] = attribute_partitions[attr][value] | {node}
+                        else:
+                            attribute_partitions[attr][value] = {node}
+                    else:
+                        attribute_partitions[attr] = {value: {node}}
+    return attribute_partitions
